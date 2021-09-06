@@ -1,0 +1,10 @@
+<template>
+  <div>
+    <div>
+      sfdsfdsfsdfsd
+    </div>
+    <Nuxt />
+  </div>
+</template>
+
+
