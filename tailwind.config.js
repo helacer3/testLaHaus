@@ -8,7 +8,11 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    fontFamily: {
+      'sans': 'Silka, Helvetica Neue, Arial, Helvetica, Verdana, sans-serif'
+    },
+    extend: {
+    },
   },
   variants: {
     extend: {},

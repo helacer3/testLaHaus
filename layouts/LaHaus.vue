@@ -1,10 +1,6 @@
 <template>
   <div>
-    <div>
-      sfdsfdsfsdfsd
-    </div>
+    <Header />
     <Nuxt />
   </div>
 </template>
-
-
