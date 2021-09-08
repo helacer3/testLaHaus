@@ -6,7 +6,7 @@
       </h1>
       <!-- container states -->
       <div
-        class="container-card-list grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-12"
+        class="container-card-list grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-12"
       >
         <RealStates
           v-for="realState in realStates"
@@ -96,7 +96,6 @@ export default Vue.extend({
     await fetch(urlRealStates)
       .then((response:any) => response.json())
       .then((response:StateResponse) => {
-        // console.log("response: ", response);
         this.realStates = response.data;
         this.dataStates = response.included;
       });
