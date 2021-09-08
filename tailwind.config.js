@@ -9,7 +9,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      'sans': 'Silka, Helvetica Neue, Arial, Helvetica, Verdana, sans-serif'
+      //sans: ['Silka', 'Helvetica Neue', 'Arial', 'Helvetica', 'Verdana', 'sans-serif']
+      sans: ['Silka Regular']
     },
     extend: {
     },

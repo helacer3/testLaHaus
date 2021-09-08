@@ -7,7 +7,6 @@
         class="h-10 pt-2 block md:hidden"
         src="~/assets/images/logoH.PNG"
         alt="La Haus" />
-
       <img
         class="h-7 hidden md:block"
         src="https://lahaus.imgix.net/static/branding/logo-lahaus-full.svg?auto=compress,format&dpr=2"

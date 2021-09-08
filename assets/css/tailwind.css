@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/**
+official Font LaHaus Website
+*/
+@layer base {
+  @font-face {
+    font-family: 'Silka Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Silka Regular'), url('../fonts/Silka-Regular.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Silka Regular Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Silka Regular Italic'), url('../fonts/Silka-RegularItalic.woff') format('woff');
+  }
+}
