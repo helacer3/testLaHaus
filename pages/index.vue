@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="container pt-10 px-7 md:py-15 md:px-16 lg:py-20 lg:px-40  bg-yellow-300">
-      <h1 class="font-semibold text-center text-2xl md:text-3xl mb-14 bg-green-100 w-auto">
+    <div class="container pt-10 px-7 md:py-15 md:px-16 lg:py-20 lg:px-40">
+      <h1 class="font-semibold text-center text-2xl md:text-3xl mb-14 w-auto">
         Listas de favoritos
       </h1>
       <!-- container states -->
@@ -17,7 +17,7 @@
 
         <div class="slidecard max-h-44 text-blue-900 font-bold">
           <div
-            class="flex flex-col text-6xl items-center justify-center h-44 bg-green-50 rounded-lg cursor-pointer">
+            class="flex flex-col text-6xl items-center justify-center h-44 rounded-lg cursor-pointer">
             <span>+</span>
           </div>
           <div class="mt-4 text-center">

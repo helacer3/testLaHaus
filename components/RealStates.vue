@@ -1,8 +1,13 @@
 <template>
-  <div class="container-card flex flex-col bg-transparent cursor-pointer bg-green-500">
+  <div class="container-card flex flex-col bg-transparent cursor-pointer">
 
     <div class="slidecard max-h-44">
-      <div class="slidecard-images flex flex-wrap h-44 w- rounded-lg bg-gray-500" v-if="stateImages.length >0">
+      <span
+        class="slidecard-counter absolute mt-16 ml-60 text-2xl text-white text-right font-bold z-50"
+      >
+        + {{ realState.attributes.real_estate_ids.length }}
+      </span>
+      <div class="slidecard-images flex flex-wrap h-44 w- rounded-lg" v-if="stateImages.length > 0">
         <div
             v-for="(item, index) in stateImages"
             :key="index"
@@ -13,10 +18,6 @@
             :class="itemImageClass(index)"
           />
         </div>
-
-        <!-- <span class="float-right -ml-12 pt-20 text-lg text-white font-bold z-40">
-          + {{ realState.attributes.real_estate_ids.length }}
-        </span> -->
       </div>
     </div>
 
@@ -71,8 +72,8 @@
       itemImageClass(actItem:number):string {
         const zIndex = (actItem == 0) ? 'z-40': ((actItem == 1) ? 'z-30' : 'z-20');
         return (actItem == 0) ?
-          `relative h-full w-full rounded-lg border border-white overflow-hidden ${zIndex}` :
-          `relative h-full w-auto rounded-tr-lg rounded-br-lg border overflow-hidden border-white ${zIndex}`;
+          `relative h-full w-full rounded-lg border-2 border-white overflow-hidden ${zIndex}` :
+          `inline-block relative min-h-full h-auto w-auto rounded-tr-lg rounded-br-lg border-2 overflow-hidden border-white ${zIndex}`;
       }
     }
   });
