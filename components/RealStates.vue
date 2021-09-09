@@ -1,14 +1,12 @@
 <template>
-  <div class="container-card flex flex-col bg-transparent cursor-pointer">
-
+  <div class="container-card relative flex flex-col bg-transparent cursor-pointer">
     <div class="slidecard max-h-44">
-      <span
-        class="slidecard-counter absolute mt-16 ml-60 text-2xl text-white text-right font-bold z-50"
-      >
-        + {{ realState.attributes.real_estate_ids.length }}
-      </span>
-      <div class="slidecard-images flex flex-wrap h-44 w- rounded-lg" v-if="stateImages.length > 0">
-        <div
+    <span
+      class="slidecard-counter absolute flex justify-end items-center -ml-8 w-full h-44 text-2xl text-white text-right font-bold z-50 bg-transparent"
+    >
+      + {{ realState.attributes.real_estate_ids.length }}
+    </span>
+      <div class="slidecard-images flex flex-wrap h-44 w- rounded-lg" v-if="stateImages.length > 0">        <div
             v-for="(item, index) in stateImages"
             :key="index"
             :class="containerImageClass(index, stateImages.length)">
@@ -73,7 +71,7 @@
         const zIndex = (actItem == 0) ? 'z-40': ((actItem == 1) ? 'z-30' : 'z-20');
         return (actItem == 0) ?
           `relative h-full w-full rounded-lg border-2 border-white overflow-hidden ${zIndex}` :
-          `inline-block relative min-h-full h-auto w-auto rounded-tr-lg rounded-br-lg border-2 overflow-hidden border-white ${zIndex}`;
+          `inline-block origin-left relative h-auto min-h-full h-auto w-auto rounded-tr-lg rounded-br-lg border-2 overflow-hidden border-white ${zIndex}`;
       }
     }
   });
